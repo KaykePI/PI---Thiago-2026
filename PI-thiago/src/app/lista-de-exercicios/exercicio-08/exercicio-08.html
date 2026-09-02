@@ -1,0 +1,40 @@
+<h2>Exercício 8 - Cadastro de produto</h2>
+
+<label>
+  Produto:
+  <input
+    type="text"
+    [(ngModel)]="produto">
+</label>
+
+<br><br>
+
+<label>
+  Preço:
+  <input
+    type="number"
+    [(ngModel)]="preco">
+</label>
+
+<br><br>
+
+<label>
+  Quantidade:
+  <input
+    type="number"
+    [(ngModel)]="quantidade">
+</label>
+
+<hr>
+
+<h3>Resumo</h3>
+
+<p>Produto: {{ produto }}</p>
+
+<p>Preço: {{ preco | currency:'BRL' }}</p>
+
+<p>Quantidade: {{ quantidade }}</p>
+
+<p>
+  Total: {{ preco * quantidade | currency:'BRL' }}
+</p>
