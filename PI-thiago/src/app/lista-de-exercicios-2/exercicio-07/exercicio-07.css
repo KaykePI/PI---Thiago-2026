@@ -1,0 +1,21 @@
+li {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid black;
+}
+
+.par {
+  background-color: lightblue;
+}
+
+.impar {
+  background-color: lightgray;
+}
+
+.primeiro {
+  font-weight: bold;
+}
+
+.ultimo {
+  border: 3px solid black;
+}

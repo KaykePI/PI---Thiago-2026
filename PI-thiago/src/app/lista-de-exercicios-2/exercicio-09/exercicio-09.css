@@ -1,0 +1,17 @@
+li {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid black;
+}
+
+.vermelho {
+  background-color: #ffb3b3;
+}
+
+.amarelo {
+  background-color: #fff0a8;
+}
+
+.verde {
+  background-color: #b8e6b8;
+}

@@ -1,0 +1,22 @@
+li {
+  padding: 10px;
+  margin: 8px;
+  border: 2px solid black;
+}
+
+.baixa {
+  border-left: 8px solid green;
+}
+
+.media {
+  border-left: 8px solid orange;
+}
+
+.alta {
+  border-left: 8px solid red;
+}
+
+.concluida {
+  opacity: 0.6;
+  text-decoration: line-through;
+}

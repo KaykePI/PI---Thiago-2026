@@ -1,0 +1,41 @@
+<h2>Exercício 13 - Lista de tarefas</h2>
+
+<p>Total de tarefas: {{ tarefas.length }}</p>
+
+<p>Concluídas: {{ contarConcluidas() }}</p>
+
+<p>Pendentes: {{ contarPendentes() }}</p>
+
+<p *ngIf="tarefas.length === 0">
+  Nenhuma tarefa cadastrada.
+</p>
+
+<ul>
+
+  <li
+    *ngFor="let tarefa of tarefas"
+    [ngClass]="{
+      'baixa': tarefa.prioridade === 'baixa',
+      'media': tarefa.prioridade === 'média',
+      'alta': tarefa.prioridade === 'alta',
+      'concluida': tarefa.concluida
+    }">
+
+    <strong>{{ tarefa.titulo }}</strong>
+
+    <p>Responsável: {{ tarefa.responsavel }}</p>
+
+    <p>Prioridade: {{ tarefa.prioridade }}</p>
+
+    <p>
+      Status:
+      {{ tarefa.concluida ? 'Concluída' : 'Pendente' }}
+    </p>
+
+    <button (click)="alternarStatus(tarefa)">
+      {{ tarefa.concluida ? 'Marcar como pendente' : 'Concluir tarefa' }}
+    </button>
+
+  </li>
+
+</ul>
